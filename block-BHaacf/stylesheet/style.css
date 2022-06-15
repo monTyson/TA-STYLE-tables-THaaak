@@ -1,0 +1,410 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;			
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+ q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	
+}
+
+/*My Resets*/
+/*ed563a*/
+
+*,
+*::before,
+*::after{box-sizing: border-box;}
+
+a{text-decoration: none;}
+
+body{font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+line-height: 1.5;}
+
+/*System-Resets*/
+
+/*Container-Classes*/
+
+.container{max-width: max-content;
+	width: 100%;
+margin: 0 auto;
+padding: 32px 0;
+overflow: hidden;}
+
+.section-container{max-width: 1040px;
+width: 100%;
+margin: 0 auto;
+padding: 32px 0;}
+
+.over-hidden{overflow: hidden;}
+
+.flex{display: flex;
+flex-direction: row;
+align-items: center;
+justify-items: center;}
+
+.flex-a{display: flex;
+	align-items: stretch;
+justify-content: space-evenly;}
+
+.center{display: flex;
+	align-items: center;
+	justify-content: center;}
+
+/*Text-capital*/
+
+.uppercase{text-transform: uppercase;}
+
+.capital{text-transform: capitalize;}
+
+/*Text-Center*/
+.text-align{text-align: center;}
+
+/*Width*/
+.width-10p{width: 10px;}
+
+.width-15p{width: 15px;}
+.width-10{width: 10%;}
+.width-20{width: 20%;}
+.width-30{width: 30%;}
+.width-40{width: 40%;}
+.width-45{width: 45%;}
+.width-55{width: 50%;}
+.width-60{width: 60%;}
+.width-70{width: 70%;}
+
+.width-80{width: 80%;}
+
+.width-90{width: 90%;}
+
+.width-100{width: 100%;}
+
+/*Font-size*/
+
+.font-0{font-size: 0;}
+
+
+.font-10{font-size: 10px;}
+
+.font-12{font-size: 12px;}
+
+.font-14{font-size: 14px;}
+
+.font-16{font-size: 16px;}
+
+.font-18{font-size: 18px;}
+
+.font-24{font-size: 24px;}
+
+.font-32{font-size: 32px;}
+
+/*Font-Weight*/
+
+.fw-500{font-weight: 700;}
+
+.fw-600{font-weight: 600;}
+
+.fw-900{font-weight: 900;}
+
+/*Padding*/
+
+.padding-1632{padding: 16px 32px;}
+
+.padding-1637{padding: 16px 37px;}
+
+.padding-1664{padding: 16px 74px;}
+
+.padding-0612{padding: 6px 12px;}
+
+.padding-1012{padding: 10px 12px;}
+
+.padding-0816{padding: 8px 16px;}
+
+
+.padding-0820{padding: 10px 20px;}
+
+/*Border-Radius*/
+.br{border-radius: 2px;}
+
+.br-4{border-radius: 4px;}
+
+.br-6{border-radius: 6px;}
+
+/*Colors*/
+
+.white{color: #ffffff;}
+
+.shad-white{color: rgb(255, 255, 255,0.5);}
+
+.orange{color:#ed563a;}
+
+.black{color: black;} 
+
+.gray{color: rgb(128, 128, 128,0.9);}
+
+.blue{color:rgb(56, 158, 199);}
+
+/*Margin-bottom*/
+
+.mbtom-6{margin-bottom: 6px;}
+
+.mbtom-8{margin-bottom: 8px;}
+
+.mbtom-12{margin-bottom: 12px;}
+
+.mbtom-16{margin-bottom: 16px;}
+
+.mbtom-20{margin-bottom: 20px;}
+
+.mbtom-24{margin-bottom: 24px;}
+
+.mbtom-32{margin-bottom: 32px;}
+
+.mbtom-36{margin-bottom: 36px;}
+
+.mbtom-40{margin-bottom: 40px;}
+
+
+.mbtom-80{margin-bottom: 80px;}
+
+/*margin-left*/
+.mbleft-10{margin-left: 10px;}
+.mbleft-20{margin-left: 20px;}
+.mbleft-spl{margin-left: 10pc;}
+.mbleft-40{margin-left: 40px;}
+
+
+.mbleft-60{margin-left: 60px;}
+
+.mbleft-80{margin-left: 80px;}
+
+/*margin-top*/
+
+.mbtop-10{margin-top: 10px;}
+
+.mbtop-20{margin-top: 20px;}
+
+.mbtop-40{margin-top: 40px;}
+
+.mbtop-60{margin-top: 60px;}
+
+.mbtop-80{margin-top: 80px;}
+
+/*mb-rght*/
+.mbrght-20{margin-right: 20px;}
+
+.mbrght-40{margin-right: 40px;}
+
+.mbrght-60{margin-right: 60px;}
+
+.mbrght-80{margin-right: 80px;}
+
+
+/*Text-Center*/
+
+.text-center{text-align: center;}
+
+/*Header */
+
+.header{background-color: rgb(0, 0, 10,0.1);
+filter: brightness(20%) contrast(90%);
+position: relative;}
+
+.video{width: 100%;
+		position: relative;}	
+
+.nav-box{position: absolute;
+	top: 0;
+	width: 95pc;
+	padding: 10px 0;
+	background-color: rgb(255, 255, 255,0.2);}
+
+.hero-items{
+margin: 10px 10px;}	
+
+.hero-items a{color: #ffffff;
+font-weight: 600;}
+
+.hero-items .active{color: #ed563a;
+font-weight: 600;}
+
+.hero-items .non-active:hover{color: #ed563a;}
+
+/*Main*/
+
+/*Section-first-Hero-Section*/
+
+.ontop{position: absolute;
+bottom: 200px;
+left: 450px;
+text-align: center;}
+
+.ontop h1{font-size: 16px;
+color: white;
+margin-bottom: 10px;
+text-transform: uppercase;}
+
+.ontop h2{font-size: 64px;
+text-transform: uppercase;
+color: #ffffff;
+font-weight: 600;
+margin-bottom: 20px;}
+
+
+.btn{background-color: #ed563a;
+text-align: center;
+text-transform: uppercase;
+color: #ffffff;}
+
+.btn-x{background-color: #ed563a;
+	text-align: center;
+	}
+
+.btn:hover{background-color: rgb(237, 86, 58,0.5);}	
+
+.btn-x:hover{background-color: rgb(237, 86, 58,0.5);}	
+		
+/*Second-Section*/
+
+.paragram{width:60%;
+}
+
+.mode{width: 100%;}
+
+/*Third-Section*/
+
+.About:hover{text-decoration: underline;}
+
+/*Fourth-Section*/
+
+.cta-bg{position: relative;}
+
+.friend{position: absolute;
+	bottom: 10pc;
+	left: 15pc;}
+
+/*Sixth-Section*/
+.tablets{width: 280px;
+	padding: 16px 0;
+background-color: white;
+box-shadow:rgb(0, 0, 0,0.2) 1px 1px 5px;}	
+
+/*Seventh-Section*/
+
+.onjoyr{position: relative;}
+
+.oytop{position: absolute;
+	top: 10pc;}
+
+.nav-active .white:hover{
+	color: #ed563a;}
+		
+/*Table*/
+
+table{border: 1px solid;
+font-size: 12px;
+color: #ffffff;}
+
+td{border: 1px solid;
+padding: 32px 64px;}
+
+/*Eight-Section*/
+
+.wrapper{width: 350px;
+	padding: 30px;
+background-color:white;
+box-shadow:rgb(0, 0, 0,0.2) 1px 1px 5px;}
+
+.nulla .adiu:hover{background-color: #ed563a;}
+
+/*Ninth-Section*/
+.ninth{position: relative;}
+
+.form{width: 800px;
+	height: 455px;
+background-image: url(../assets/schedule-bg.jpg);}
+
+input:hover{border:0.5px solid #ed563a;
+outline: #ed563a;}
+
+textarea:hover{border: 0.5px solid #ed563a;
+outline: #ed563a;}
+
+.half{width: 800px;}
+
+.full{
+width: 600px;
+height: 380px;
+border-radius: 5px;
+margin: 10px 110px;
+padding: 60px 20px;
+background-color: #ffffff;}
+.th-70{width: 250px;
+	margin:  13.5px ;
+	height: 40px;}
+
+.th-60{width: 528px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	height: 40px;}
+
+.th-50{width: 528px;
+	margin-left: 15px;
+	height: 150px;}
+
+.th-50, .th-60, .th-70 {border: 0.5px solid rgb(128, 128, 128,0.7);
+outline: #ffffff;}
+
+.ab, .bc , .cd{position: relative;
+bottom:  50px;}	
+
+.coin{position:relative;
+top: 350px;
+left: 142px;}	
+
+/*Footer*/
+.footer{padding: 20px 20px;
+	position: relative;
+	bottom:  32px;
+	background-color: rgb(227, 227, 235);
+text-align: center;}
+
+.foot{}
